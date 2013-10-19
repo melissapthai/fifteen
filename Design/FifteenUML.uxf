@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>576</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>_Fifteen_
+--
+[program starts here]
+Fields:
+FifteenFrame frame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>252</x>
+      <y>837</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_JFrame_
+--
+void setLayout(layout)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>315</x>
+      <y>765</y>
+      <w>125</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;72;108;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>387</x>
+      <y>603</y>
+      <w>279</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>_FifteenFrame_
+--
+Fields:
+int rows = 4, cols = 4
+Puzzle puzzle
+List&lt;GameButton&gt; boardDisplay
+GamePanel gamePanel
+TimerLabel gameClock
+JPanel timerPanel
+int[][] board
+JMenuBar bar
+ControlMenu gameOptions // has a bunch of JMenuItem objects
+JMenu help // has one JMenuItem object
+---
+Methods:
+int getRows()
+int getCols()
+void setPuzzle(Puzzle newPuzzle)
+void actionPerformed(ActionEvent e) //@Override
+void update()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>162</x>
+      <y>585</y>
+      <w>242</w>
+      <h>71</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+constructs</panel_attributes>
+    <additional_attributes>225;54;27;36</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>936</x>
+      <y>783</y>
+      <w>216</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_GamePanel_
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>954</x>
+      <y>900</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_JPanel_
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1017</x>
+      <y>819</y>
+      <w>44</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;81;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>999</x>
+      <y>387</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_JMenu_
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>999</x>
+      <y>477</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_ControlMenu_
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1062</x>
+      <y>423</y>
+      <w>44</w>
+      <h>71</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>639</x>
+      <y>684</y>
+      <w>314</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+constructs</panel_attributes>
+    <additional_attributes>297;135;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>639</x>
+      <y>486</y>
+      <w>377</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+constructs</panel_attributes>
+    <additional_attributes>360;27;27;144</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>945</x>
+      <y>630</y>
+      <w>207</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_&lt;&lt;interface&gt;&gt; ActionListener_
+--
+void actionPerformed(ActionEvent e)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1017</x>
+      <y>666</y>
+      <w>44</w>
+      <h>134</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>27;27;27;117</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1053</x>
+      <y>513</y>
+      <w>44</w>
+      <h>134</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>27;117;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>252</x>
+      <y>288</y>
+      <w>207</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>_Puzzle_
+--
+Fields:
+int[][] gameBoard
+Stack&lt;Move&gt; moves
+Stack&lt;Move&gt; redos
+---
+Methods:
+void generatePuzzle(m, n)
+void generateSolution(m, n)
+boolean makeMove(int, int)
+void makeMove(Move)
+int[] [] returnPuzzle()
+void undo()
+void redo()
+boolean redoable()
+boolean isSolved() </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>252</x>
+      <y>27</y>
+      <w>189</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>_Move_
+--
+Fields:
+int previousX
+int previousY
+int postX
+int postY
+---
+Methods:
+int getPreviousX()
+int getPreviousY()
+int getPostX()
+int getPostY()
+Move invert()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>279</x>
+      <y>207</y>
+      <w>102</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+construct</panel_attributes>
+    <additional_attributes>54;27;54;81</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>315</x>
+      <y>513</y>
+      <w>125</w>
+      <h>107</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+constructs</panel_attributes>
+    <additional_attributes>27;27;108;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>639</x>
+      <y>639</y>
+      <w>323</w>
+      <h>53</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>306;27;27;36</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>495</x>
+      <y>369</y>
+      <w>189</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>_GameButton_
+--
+Fields:
+int gridX
+int gridY
+---
+Methods:
+int getGridX()
+int getGridY()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>477</x>
+      <y>477</y>
+      <w>133</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+constructs  m*n</panel_attributes>
+    <additional_attributes>99;27;36;126</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>450</x>
+      <y>846</y>
+      <w>207</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_TimerLabel_
+--
+void actionPerformed(ActionEvent e) //@Override
+void startTimer()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>459</x>
+      <y>765</y>
+      <w>105</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+constructs</panel_attributes>
+    <additional_attributes>63;81;54;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>684</x>
+      <y>900</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_TimerPanel_
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>639</x>
+      <y>720</y>
+      <w>152</w>
+      <h>197</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+constructs</panel_attributes>
+    <additional_attributes>135;180;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>846</x>
+      <y>909</y>
+      <w>125</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>108;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>450</x>
+      <y>963</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>_JLabel_
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>513</x>
+      <y>882</y>
+      <w>44</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;81;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>630</x>
+      <y>657</y>
+      <w>332</w>
+      <h>242</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>315;27;27;225</additional_attributes>
+  </element>
+</diagram>

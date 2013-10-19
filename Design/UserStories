@@ -1,0 +1,16 @@
+User Stories:
+
+* 1. When the user runs the application, a window appears with a frame of size 600x800 pixels.
+* 2. When the user clicks the red "X" button, the 
+* 2. When the user runs the application, a new ControlPanel appears in the top of the frame.
+* 3. When the user runs the application, a new GamePanel appears in the center of the frame.
+* 4. When the user runs the application, the ControlPanel contains a ControlMenu with the categories "Game Options" and "Help."
+* 5. When the user runs the application, the GamePanel contains 16 buttons, with one blank and the others labeled 1-15.
+* 6. When the user clicks on "About" in the "Help" category of the ControlMenu, a dialog box will appear with the author bios. 
+* 7. When the user clicks "New Game" in the "Game Options" category of the ControlMenu, a shuffled, solvable gameboard appears.
+* 8. When the user clicks on a button on the gameboard that is next to an empty/blank button, it appears to swap the two. 
+* 9. When the user clicks "Reset Game" in the "Game Options" category of the ControlMenu, a solved gameboard appears.
+* 10. When the user solves the puzzle, a congratulatory message will appear. 
+* 11. When the user clicks "Set Size" in the "Game Options" category of the ControlMenu, a window pops up to allow them to enter the number of rows and columns.
+* 12. When the user clicks "Undo" in the "Game Options" category of the ControlMenu, the gameboard reverts to its state before the last move.
+* 13. When the user clicks "Redo" in the "Game Options" category of the ControlMenu, the gameboard reverts to its state before the last undo.
